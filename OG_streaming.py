@@ -1,7 +1,6 @@
 import omnigibson as og
-from omnigibson.macros import gm
 from omnigibson import lazy
-from omnigibson.macros import gm, macros
+from omnigibson.macros import gm
 
 gm.REMOTE_STREAMING = "native"
 gm.HEADLESS = True
