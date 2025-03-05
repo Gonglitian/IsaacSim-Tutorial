@@ -22,7 +22,7 @@ pip install -e .
 python -m omnigibson.install
 ```
 
-## 4. Switch to 'og-people' tag to dev people extension
+## 4. (Optional) Switch to 'og-people' tag to dev people extension
 
 ```bash
 git switch og-people
