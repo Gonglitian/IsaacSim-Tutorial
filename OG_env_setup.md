@@ -22,6 +22,12 @@ pip install -e .
 python -m omnigibson.install
 ```
 
+## 4. Switch to 'og-people' tag to dev people extension
+
+```bash
+git switch og-people
+```
+
 # Remote Streaming
 1. Run [example code](https://github.com/Gonglitian/IsaacSim-Tutorial/blob/main/OG_streaming.py) in the remote machine to start streaming
 
