@@ -28,7 +28,7 @@ python -m omnigibson.install
 git switch og-people
 ```
 
-# Remote Streaming
+## 5.(Optional) Remote Streaming
 1. Run [example code](https://github.com/Gonglitian/IsaacSim-Tutorial/blob/main/OG_streaming.py) in the remote machine to start streaming
 
 2. Download [Omniverse Streaming Client](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html#isaac-sim-latest-release) (shown following), input remote machine IP address and connect to see the local visualization of remote streaming graphics.
