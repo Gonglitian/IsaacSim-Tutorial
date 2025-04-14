@@ -33,8 +33,19 @@ python -m omnigibson.install
 ```
 
 📥 **What this does:**
-- Downloads and installs **NVIDIA Isaac Sim**.
-- Retrieves necessary **scene assets** and **datasets** used by OmniGibson.
+- Downloads and installs **Isaac Sim**.
+- Retrieves necessary **scene assets** and **datasets** in **Behavior-1K** used by OmniGibson.
+
+### (Optional) Custom Path
+
+```python
+gm.ASSET_PATH = determine_gm_path(os.path.join("your_path_here", "assets"), "OMNIGIBSON_ASSET_PATH")
+gm.DATASET_PATH = determine_gm_path(os.path.join("your_path_here", "og_dataset"), "OMNIGIBSON_DATASET_PATH")
+gm.KEY_PATH = determine_gm_path(os.path.join("your_path_here", "omnigibson.key"), "OMNIGIBSON_KEY_PATH")
+```
+Once configured, the directories will be automatically created (if they do not exist), and the corresponding data will be downloaded to the specified locations.
+
+
 
 ---
 
