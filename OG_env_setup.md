@@ -14,11 +14,24 @@ conda activate omnigibson
 ---
 
 ## 📦 2. Install OmniGibson
-
+If you want to use remote streaming for local visualization or people extension in OmniGibson, please clone my repo
 ```bash
 git clone https://github.com/Gonglitian/OmniGibson.git
 cd OmniGibson
 pip install -e .
+```
+
+If not, you can just use official repo for installation.
+
+```bash
+git clone https://github.com/StanfordVL/OmniGibson.git
+cd OmniGibson
+pip install -e .
+```
+Or 
+
+```
+pip install omnigibson # Source not editable
 ```
 
 ✅ **Explanation:**
@@ -36,18 +49,14 @@ python -m omnigibson.install
 - Downloads and installs **Isaac Sim**.
 - Retrieves necessary **scene assets** and **datasets** in **Behavior-1K** used by OmniGibson.
 
-### (Optional) Custom Path
-
+### (Optional) Custom Dataset Path
+Do the following in `omnigibson/macros.py`:
 ```python
 gm.ASSET_PATH = determine_gm_path(os.path.join("your_path_here", "assets"), "OMNIGIBSON_ASSET_PATH")
 gm.DATASET_PATH = determine_gm_path(os.path.join("your_path_here", "og_dataset"), "OMNIGIBSON_DATASET_PATH")
 gm.KEY_PATH = determine_gm_path(os.path.join("your_path_here", "omnigibson.key"), "OMNIGIBSON_KEY_PATH")
 ```
 Once configured, the directories will be automatically created (if they do not exist), and the corresponding data will be downloaded to the specified locations.
-
-
-
----
 
 ## 🧍‍♂️ 4. (Optional) Switch to `og-people` branch for people simulation support
 
