@@ -14,7 +14,7 @@ conda activate omnigibson
 ---
 
 ## 📦 2. Install OmniGibson
-If you want to use remote streaming for local visualization or people extension in OmniGibson, please clone my repo
+If you want to use **remote streaming** for local visualization or **people extension** in OmniGibson, please clone my repo.
 ```bash
 git clone https://github.com/Gonglitian/OmniGibson.git
 cd OmniGibson
@@ -40,14 +40,7 @@ pip install omnigibson # Source not editable
 ---
 
 ## 📁 3. Install Isaac Sim, Dataset, and Assets
-
-```bash
-python -m omnigibson.install
-```
-
-📥 **What this does:**
-- Downloads and installs **Isaac Sim**.
-- Retrieves necessary **scene assets** and **datasets** in **Behavior-1K** used by OmniGibson.
+Download dataset to omnigibson/data by default.
 
 ### (Optional) Custom Dataset Path
 Do the following in `omnigibson/macros.py`:
@@ -57,6 +50,16 @@ gm.DATASET_PATH = determine_gm_path(os.path.join("your_path_here", "og_dataset")
 gm.KEY_PATH = determine_gm_path(os.path.join("your_path_here", "omnigibson.key"), "OMNIGIBSON_KEY_PATH")
 ```
 Once configured, the directories will be automatically created (if they do not exist), and the corresponding data will be downloaded to the specified locations.
+
+```bash
+python -m omnigibson.install
+```
+
+📥 **What this does:**
+- Downloads and installs **Isaac Sim**.
+- Retrieves necessary **scene assets** and **datasets** in **Behavior-1K** used by OmniGibson.
+
+
 
 ## 🧍‍♂️ 4. (Optional) Switch to `og-people` branch for people simulation support
 
@@ -94,7 +97,7 @@ python OG_streaming.py
 🔗 [Download Omniverse Streaming Client](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html#isaac-sim-latest-release)
 ![image](https://github.com/user-attachments/assets/4f6330e2-1aa3-444b-97a9-83949d182b2d)
 
-📡 Launch the client and input the **remote machine’s IP address** to visualize the simulation **in real time** on your local system.
+📡 Launch the client and input the **remote machine’s IP address** (e.g. IP in tailscale) to visualize the simulation **in real time** on your local system.
 ![image](https://github.com/user-attachments/assets/0a61c0eb-8c9d-4f6e-b219-4d4632c10047)
 
 ---
