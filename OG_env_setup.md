@@ -43,7 +43,7 @@ pip install omnigibson # Source not editable
 Download dataset to omnigibson/data by default.
 
 ### (Optional) Custom Dataset Path
-Do the following in `omnigibson/macros.py`:
+Find global macros about paths and change them as following in `omnigibson/macros.py`:
 ```python
 gm.ASSET_PATH = determine_gm_path(os.path.join("your_path_here", "assets"), "OMNIGIBSON_ASSET_PATH")
 gm.DATASET_PATH = determine_gm_path(os.path.join("your_path_here", "og_dataset"), "OMNIGIBSON_DATASET_PATH")
